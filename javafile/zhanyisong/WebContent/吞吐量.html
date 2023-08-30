@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<script src="js/macarons.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'),'macarons');
+		//指定图表的配置项和数据
+	var option={
+				
+				//grid:[
+					//{x:'7%',y:'7%',width:'50%',height:'50%'}
+				//],
+				xAxis:{
+					type:'category',
+					data:["Create a car","Change car owner","Query all cars","Query a car"],
+					name:'',
+					nameLocation:'center',
+					nameGap:35},
+				yAxis:{name:'吞吐量（TPS）',
+					nameLocation:'center',
+					nameGap:40},
+				series:[{
+					name:'RocksDB',
+					type:'bar',
+					data:[44.9,49.1,750,900.1]
+				},
+				{
+					name:'Mysql',
+					type:'bar',
+					data:[12.0,18.0,748,1221.1]
+				},
+				{
+					name:'Scalable',
+					type:'bar',
+					data:[48.7,51.1,720.6,1199.9]
+				}],
+				legend:{show:true,
+					bottom:'0%',
+					data:['RocksDB','Mysql','Scalable'],
+					},		
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

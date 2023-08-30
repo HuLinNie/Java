@@ -1,0 +1,5 @@
+package richanglianxi;
+
+public interface wolfes extends dance, Swimmer {
+	void display();
+}

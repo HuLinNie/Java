@@ -1,0 +1,34 @@
+package richanglianxi;
+
+public class Dog implements wolfes{
+	public Dog() {	
+	}
+//	@Override
+	public void eat() {
+		System.out.println("Eat cat!");		
+	}
+	public void swimming() {
+		System.out.println("I am swimming!");
+	}
+	public void dancce() {
+		System.out.println("I am dancing!");
+	}public void dan() {
+		System.out.println("I am dancing!");
+		
+	}
+
+	public void display() {
+			System.out.println("I am dancing!");
+		
+	}
+	public static void main(String []args) {
+		Dog d =new Dog();
+		d.swimming();
+		d.eat();
+		d.dancce();
+		d.dan();
+		d.display();
+}
+	
+	
+}

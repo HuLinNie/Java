@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var option={
+				title:{
+					text:'产品一周销量情况'
+				},
+				 yAxis: {
+				        type: 'category',
+				        data: ['A商场', 'B商场', 'C商场', 'D商场', 'E商场', 'F商场', 'G商场']
+				    },
+				    xAxis: {
+				        type: 'value'
+				    },
+				    legend:{
+				    	data:['A产品','B产品']
+				    },
+				    series: [{
+				    	name:'A产品',
+				        data: [100, 150, 120, 90, 50, 130, 110],
+				        type: 'bar',
+				        label:{
+				        	show:true,
+				        	position:'right'
+				        }
+				    },
+				    {
+				    	name:'B产品',
+				        data: [120, 130, 110, 70, 60, 110, 140],
+				        type: 'bar',
+				        label:{
+				        	show:true,
+				        	position:'right'
+				        }
+				    }]
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

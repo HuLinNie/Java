@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	border: 0;
+}
+
+#divform {
+	margin: 30px auto;
+	padding: 10px;
+	width: 650px;
+	background-color: #EAEDF0;
+}
+
+#divform div {
+	margin: 0.5em;
+	text-align: left;
+}
+#basic_info{
+	float:left;
+}
+
+.txtlabel {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+	padding-right:3px;
+	
+}
+
+input[type=text], input[type=date], input[type=email],input[type=password] {
+	width: 180px;
+}
+#u_pic_file {
+	float: right;
+}
+#u_pic {
+	display:block;
+	width: 120px;
+	height: 160px;
+	border:solid black 1px;
+}
+
+#selLocation{
+	width: 240px; 
+	height: 24px; 
+	margin: 2px;
+}
+#txtMemo{
+	display: block; 
+	width: 80%; 
+	height: 180px; 
+	margin: 5px auto;
+}
+.btn {
+	width: 120px;
+	height: 35px;
+	margin: 5px;
+}
+.clearfloat{
+	clear:both;
+}
+.center{
+	display:block;
+	margin:0 auto;
+	text-align:center;
+}
+

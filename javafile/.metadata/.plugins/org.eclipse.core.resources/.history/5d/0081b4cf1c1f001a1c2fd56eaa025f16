@@ -1,0 +1,9 @@
+package richanglianxi;
+ class Person {
+	public int c =18;
+	private int age =15;
+	private String name="wxh";
+//	protected void 
+	
+
+}

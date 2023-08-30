@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var option={
+				tooltip:{
+					trigger:'axis',
+					axisPointer:{
+						type:'shadow'
+					}
+				},
+				 yAxis: {
+				        type: 'category',
+				        data: ['A产品', 'B产品', 'C产品', 'D产品', 'E产品', 'F产品', 'G产品']
+				    },
+				    xAxis: {
+				        type: 'value'
+				    },
+				    legend:{
+				    	data:['A商场', 'B商场', 'C商场', 'D商场', 'E商场']
+				    },
+				    series: [{
+				    	name:'A商场',
+				        data: [320,302,301,334,390,330,320],
+				        type: 'bar',
+				        label:{
+				        	show:true,
+				        	position:'inside'
+				        }
+				    },
+				    {
+				    	name:'B商场',
+				        data: [320,332,301,334,490,330,310],
+				        type: 'bar',
+				        stack:'总量1',
+				        label:{
+				        	show:true,
+				        	position:'inside'
+				        }
+				    },{
+				    	name:'C商场',
+				        data: [220,182,191,234,290,330,310],
+				        type: 'bar',
+				        stack:'总量1',
+				        label:{
+				        	show:true,
+				        	position:'inside'
+				        }
+				    },{
+				    	name:'D商场',
+				        data: [150,212,201,154,190,330,410],
+				        type: 'bar',
+				        stack:'总量',
+				        label:{
+				        	show:true,
+				        	position:'inside'
+				        }
+				    },{
+				    	name:'E商场',
+				        data: [420,532,501,234,290,330,320],
+				        type: 'bar',
+				        stack:'总量',
+				        label:{
+				        	show:true,
+				        	position:'inside'
+				        }
+				    }]
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

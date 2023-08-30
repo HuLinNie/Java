@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<script src="js/dataTool.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		var data = [{
+		    name: 'A',
+		    children: [{
+		        name: 'A1',
+		        children: [{
+		            name: 'A11',
+		        },
+		        {
+		            name: 'A12',
+		            value: 3322
+		        }]
+		   		 },
+		    	{
+		        name: 'A2',
+		        children: [
+		        	{name: 'A21',value:8833},
+		        	{name: 'A22',value:1732},
+		        	{name: 'A23',value:3623}],
+		    	},
+		    	{
+			        name: 'A3',
+			        children: [
+			        	{name: 'A31',value:4166}]
+		    	}]
+		}];
+	var option={
+			tooltip:{trigger:'item'},
+			legend:{
+				top:'2%',
+				left:'3%',
+				data:[{name:'tree1',icon:'rectangle'}],
+			},
+			 series: [
+				 {
+					 type:'tree',
+					 name:'tree1',
+					 data:data,
+					 top:'5%',
+					 left:'7%',
+					 bottom:'2%',
+					 right:'20%',
+					 symbolSize:20,
+					 label:{
+						 position:'top',
+						 align:'left'
+					 },
+					 leaves:{
+						 label:{
+							 position:'right',
+							 align:'left'
+						 }
+					 } 
+			 }]
+	};
+		
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.spfl {
+    width:1200px;
+	height:570px;
+	background-color:pink;
+	margin:40px auto;
+}
+.spfl-left {
+    width:200px;
+    height:100%;
+    background-color:#b2868e;
+    float:left;
+	position:relative;
+}
+.spfl-left ul li{
+    list-style: none;
+	display:block;
+}
+
+.spfl-left .subnav {
+	height: 100%;
+	width: 200px;
+	background: rgba(0, 0, 0, .3);
+	float: left;
+}
+.spfl-left .subnav-fl {
+	width:368px;
+	height:200px;
+	
+	background: rgba(0, 0, 0, .3);
+	position:absolute;
+	left:200px;
+	top:0px;
+	/* display:none; */
+}
+.spfl-left .subnav-fl {
+	width:400px;
+	height:200px;
+	background-color:#86666bdb;
+	position:absolute;
+	left:200px;
+	top:0px;
+	display:none;
+}
+.spfl-left .subnav-fl .p-image {
+	width:50px;
+	height:50px;
+}
+.spfl-left .subnav-fl .p-image img{
+	width:50px;
+	height:50px;
+}
+.spfl-left ul li:hover .subnav-fl {
+	display: block;
+	box-shadow: 2px 3px 5px #ccc; 
+	border-top: 1px solid #ccc;
+}
+.boder{
+	height:100px;
+}
+.subnav li {
+	padding-left:20px;
+	position: relative;
+	height: 57px;
+	line-height: 40px;
+}
+.subnav-fl li{
+	float:left;
+}
+.subnav a {
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+}
+.subnav a:hover {
+	color: #c3939b;
+}
+.subnav span {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.spfl-right {
+    width:1000px;
+    height:100%;
+    background-color:#7c5e63eb;
+    float:right;
+}
+.product-max{
+	/* width:1200px; */
+	height:570px;
+	/* background-color:pink; */
+	margin:40px auto;
+}
+.product-max li{
+	width: 235px;
+	height: 270px;
+	list-style: none;
+	float: left;
+	margin-left: 12px;
+	margin-bottom: 15px;
+	/* background-color:red; */
+}
+.product-max .p-image{
+	width:228px;
+	height:160px;
+	overflow:hidden;
+	box-shadow:5px 5px 5px #888;
+}
+.product-max .p-image img{
+	width: 233px;
+	height:100%;
+	transition:all 0.6s;
+}
+.product-max .p-image img:hover{
+	transform:translatex(-5px);
+}
+.head {
+	width: 185px;
+    margin: 20px auto;
+    font-size: 14px;
+    /* color: #050505; */
+}
+.head a{
+	text-decoration: none;
+	color:#050505;
+}
+.product-max p{
+	width: 185px;
+	height: 18px;
+	font-size: 10px;
+	color:#ccc;
+	margin: 20px auto;
+}
+.product-max span{
+	width: 24px;
+	height: 16px;
+	color: #ff7c2d;
+}

@@ -1,0 +1,54 @@
+1584864645498	Rename type 'MuesumServlet'
+1584864953645	Rename resource 'muesum.jsp'
+1584865128421	Rename resource 'scarea.jsp'
+1584870477257	Delete element
+1584870518944	Delete element
+1584870552343	Delete element
+1584870604647	Delete element
+1584870637857	Delete element
+1584930006475	Rename type 'Album'
+1584949045902	Rename type 'AlbumServlet'
+1584949377520	Rename type 'AlbumDaoImpl'
+1584949462344	Rename type 'IAlbumDao'
+1584951837964	Delete element
+1584951875263	Delete element
+1584951895114	Delete element
+1584951906431	Delete element
+1584951915404	Delete element
+1584951924160	Delete element
+1584951939393	Delete element
+1584951945293	Delete element
+1584951956744	Delete element
+1584951975840	Delete element
+1584952025062	Delete element
+1584952043191	Delete element
+1584952203997	Delete element
+1584952214258	Delete element
+1584952234361	Delete element
+1584952271704	Delete element
+1584952352127	Rename type 'AlbumService'
+1584952493174	Delete element
+1584952513464	Move 'nearbyshops.jsp' to 'demo'
+1584952519312	Move 'schoolmarket.jsp' to 'jsp'
+1584952555598	Move 'schoolmarket.jsp' to 'demo'
+1584952560633	Move 'shopview.jsp' to 'demo'
+1584952571458	Delete element
+1584952607715	Move 'Cart.jsp' to 'function'
+1584952616675	Move 'Order.jsp' to 'function'
+1584952626221	Move 'Pay.jsp' to 'function'
+1584952634179	Move 'error.jsp' to 'function'
+1584952638658	Move 'Checkout.jsp' to 'function'
+1584952665193	Move '_bottom.jsp' to 'template'
+1584952667696	Move '_header.jsp' to 'template'
+1584952693967	Move 'jindutiao.jsp' to 'template'
+1585042944017	Delete element
+1585112452808	Delete element
+1585112472060	Delete element
+1585112481186	Delete element
+1585112485844	Delete element
+1585112497427	Delete element
+1585113341568	Rename resource 'showclass.css'
+1585113577290	Delete element
+1585114769185	Delete element
+1585114883424	Delete element
+1585114889509	Delete element

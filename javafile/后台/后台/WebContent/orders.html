@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单管理</title>
+		<link rel="stylesheet" type="text/css" href="./css/hxb.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/newhxb.css"/>
+		<meta http-equiv="refresh" content="10000">
+
+	</head>
+
+	<body>
+		<div class="div1" style="background:#708090">
+		<img src="img/21.jpg" width="85px" height="85px" />
+		</div>
+	<!-- 左侧 -->
+	<div class="PublicDownWhole clearfix">
+    	<div class="leftBox" style="background:	#708090">
+          	<ul>
+               <a href="users.html"><li style="color:#FFFAFA"><span></span>用户管理</li></a>
+               <a href="QueryAllProductsServlet"><li  style="color:#FFFAFA"><span></span>商品管理</li></a>
+               <li class="Select" style="color:#FFFAFA"><span></span>订单管理</li>
+			   <a href="index.jsp"><li style="color:#FFFAFA"><span></span>退出系统</li></a>
+           	</ul>
+         </div>
+	<!-- 右侧 -->
+	<div class="RightBox" style="margin-left:0;"">
+    	<div class="PublicContentBox">
+    		<div class="InquireTableBox">
+            	
+            	 <!--查询到的商品-->
+                 <div class="InquireSelectTable" >
+                  	<table class="PublicTableCss" >
+                     	<thead>
+                        	<tr>
+								<td>订单号</td>
+								<td>收货人</td>                       
+								<td>付款账号</td>
+								<td>金额</td>
+								<td>购买的商品</td>
+								<td>收货地址</td>
+								<td>联系方式</td>
+								<td>付款状态</td>
+								<td>订单状态</td>
+							</tr>
+						</thead>
+						<tbody >
+							<tr>
+								<td>20200325131300001</td>
+								<td>张三</td>
+								<td>9558806219558807</td>
+								<td>120</td>
+								<td>有机小米粥、龙眼桑葚百合粥、黄精茯苓猪肉粥、龙眼桑葚百合粥、黄参罗汉粥、莲子百合神仙粥</td>
+								<td>河北省秦皇岛市经济开发区11号</td>
+								<td>13023890973</td>
+								<td>已付款</td>
+								<td>待退款</td>
+							</tr>
+						</tbody>
+						<tbody >
+							<tr>
+								<td>20200326051300011</td>
+								<td>李四</td>
+								<td>5398762219558807</td>
+								<td>200</td>
+								<td>龙眼桑葚百合粥、黄参罗汉粥、莲子百合神仙粥、有机小米粥、龙眼桑葚百合粥、黄精茯苓猪肉粥、玉竹内金小米粥</td>
+								<td>河北省秦皇岛市经济开发区12号</td>
+								<td>15023890973</td>
+								<td>待付款</td>
+								<td>待完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200225131324001</td>
+								<td>王武</td>
+								<td>2574806219558807</td>
+								<td>35</td>
+								<td>有机小米粥、龙眼桑葚百合粥</td>
+								<td>河北省秦皇岛市经济开发区61号</td>
+								<td>13023893694</td>
+								<td>已退款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200225081321035</td>
+								<td>王麻子</td>
+								<td>5309906219558807</td>
+								<td>12</td>
+								<td>黄参罗汉粥</td>
+								<td>河北省秦皇岛市经济开发区泰山路143号</td>
+								<td>13883890973</td>
+								<td>已付款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200215120020042</td>
+								<td>赵钱</td>
+								<td>6222306219558807</td>
+								<td>100</td>
+								<td>莲子百合神仙粥、有机小米粥、龙眼桑葚百合粥、黄精茯苓猪肉粥</td>
+								<td>河北省秦皇岛市经济开发区15号</td>
+								<td>18823890973</td>
+								<td>已付款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200215131300211</td>
+								<td>孙李</td>
+								<td>9558806219558807</td>
+								<td>300</td>
+								<td>黄参罗汉粥*2、莲子百合神仙粥*3、有机小米粥*3、龙眼桑葚百合粥、黄精茯苓猪肉粥、玉竹内金小米粥</td>
+								<td>河北省秦皇岛市经济开发区11号</td>
+								<td>13023890973</td>
+								<td>已付款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200325131300001</td>
+								<td>张三三</td>
+								<td>6222356219558807</td>
+								<td>30</td>
+								<td>黄精茯苓猪肉粥、玉竹内金小米粥</td>
+								<td>河北省秦皇岛市经济开发区11号</td>
+								<td>13023890364</td>
+								<td>已付款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<td>20200325131300001</td>
+								<td>王五五</td>
+								<td>6222106219558807</td>
+								<td>50</td>
+								<td>香橼佛手牛肉粥、黄精茯苓猪肉粥、玉竹内金小米粥</td>
+								<td>河北省秦皇岛市经济开发区泰山路143号</td>
+								<td>18023890973</td>
+								<td>已付款</td>
+								<td>已完成</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

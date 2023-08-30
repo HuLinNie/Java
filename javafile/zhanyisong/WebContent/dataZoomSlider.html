@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var option={
+			dataZoom:[
+				{
+					id:'dataZoomX',
+					type:'slider',
+					xAxisIndex:[0],
+					fliterMode:'filter'
+				},
+				{
+					id:'dataZoomY',
+					type:'slider',
+					yAxisIndex:[0],
+					fliterMode:'empty'
+				},
+			],
+			xAxis:{type:'value'},
+			yAxis:{type:'value'},
+			series:{
+				type:'bar',
+				data:[
+					//第一列对应X轴，第二列对应Y轴
+					[10,30],
+					[20,50],
+					[5,20],
+					[2,10]
+				]
+			}
+				
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

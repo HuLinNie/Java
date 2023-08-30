@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestClientSocket.java&apos; to &apos;mlqhd/src/net.socket&apos;&#x0D;&#x0A;- Original project: &apos;net.socket&apos;&#x0D;&#x0A;- Destination element: &apos;mlqhd/src/net.socket&apos;&#x0D;&#x0A;- Original element: &apos;net.socket.TestClientSocket.java&apos;" description="Copy compilation unit" destination="=mlqhd/src&lt;net.socket" element1="/src&lt;net.socket{TestClientSocket.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1576905808738" units="1" version="1.0"/>
+</session>

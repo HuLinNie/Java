@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:03:51 +0800] "GET /tmkeshihua/ HTTP/1.1" 200 17246
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:03:53 +0800] "GET /favicon.ico HTTP/1.1" 404 690
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:03:59 +0800] "GET /tmkeshihua/admin/login.jsp HTTP/1.1" 200 1846
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:04:14 +0800] "POST /tmkeshihua/LoginServlet HTTP/1.1" 200 36341
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:04:15 +0800] "POST /tmkeshihua/bar.do HTTP/1.1" 200 3452
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:04:16 +0800] "POST /tmkeshihua/commoditydetail.do HTTP/1.1" 200 3452
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:04:16 +0800] "POST /tmkeshihua/repurchaserate.do HTTP/1.1" 200 3452
+0:0:0:0:0:0:0:1 - - [07/Jun/2021:09:04:16 +0800] "POST /tmkeshihua/jhspricenumber.do HTTP/1.1" 200 3452

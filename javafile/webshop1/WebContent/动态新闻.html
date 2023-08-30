@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>动态新闻</title>
+		
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<!--slider-script-->
+		<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+				  $("#slider1").responsiveSlides({
+					auto: true,
+					speed: 500,
+					namespace: "callbacks",
+					pager: true,
+				  });
+				});
+			</script>
+<!--//slider-script-->
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+		<style>
+				*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clear{
+	zoom: 1;
+}
+
+.bg_header{
+	height: 62px;
+	background: white;
+}
+.bg_header .header{
+	width: 1006px;
+	height: 62px;
+	background: white;
+	margin: 0 auto;
+}
+.bg_header .header .logo{
+	width: 229px;
+	height: 62px;
+	/*background: green;*/
+	float: left;
+	overflow: hidden;
+}
+.bg_header .header .logo img{
+	width: 180px;
+	height: 50px;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+ 
+.bg_header .header .nav{
+	width: 777px;
+	height: 62px;
+	/*background: greenyellow;*/
+	float: left;
+}
+.bg_header .header .nav ul{
+	
+}
+.bg_header .header .nav ul li{
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	line-height: 62px;
+	font-size: 18px;
+	background: url(../img/pic_06.jpg) no-repeat right center;
+}
+.bg_header .header .nav ul li:last-child{
+	background: none;
+}
+.bg_header .header .nav ul li:first-child{
+	text-indent: 25px;
+}
+.bg_header .header .nav ul li a{
+	color:#000000;
+}
+		p
+		{
+			margin:30px 200px;
+			border-style:solid;
+			border-width:2px;
+			padding:30px 30px;
+		}
+		img
+		{
+			float:left;
+		}
+		#contain{
+			border: 2px solid black;
+			overflow:auto;
+		}
+		</style>
+		
+	</head>
+	
+	<body>
+	 <!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">	
+			<div class="header-top-in">			
+				<div class="logo">
+					<a href="index.html"><img src="images/logo2.png" alt=" " ></a>
+				</div>
+				<div class="header-in">
+					<ul class="icon1 sub-icon1">
+							<li  ><a href="login.jsp">登录</a> </li>
+							<li  ><a href="register.jsp"> 注册</a></li>
+							<li ><a href="购物车.html" >购物车</a></li>
+							<li > <a href="客服.html" >客服</a> </li>	
+							<li><div class="cart">
+									<a href="#" class="cart-in"> </a>
+									<span> 2</span>
+								</div>
+								<ul class="sub-icon1 list">
+						  <h3>最近添加</h3>
+						  <div class="shopping_cart">
+							  <div class="cart_box">
+							   	 <div class="message">
+							   	     <div class="alert-close"> </div> 
+					                <div class="list_img"><img src="images/1.jpeg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">崂山矿泉水</a></h4>24x<span class="actual">
+		                             ￥48.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                            <div class="cart_box1">
+								  <div class="message1">
+							   	     <div class="alert-close1"> </div> 
+					                <div class="list_img"><img src="images/2.jpeg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">白花蛇草水</a></h4>1x<span class="actual">
+		                             ￥120.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                        </div>
+	                        <div class="total">
+	                        	<div class="total_left">购物车小计: </div>
+	                        	<div class="total_right">￥168.00</div>
+	                        	<div class="clearfix"> </div>
+	                        </div>
+                            <div class="login_buttons">
+							  <div class="check_button"><a href="checkout.html">查看</a></div>
+							  <div class="clearfix"></div>
+						    </div>
+					      <div class="clearfix"></div>
+						</ul>
+							</li>
+						</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+		<div class="container">
+			<div class="h_menu4">
+			<a class="toggleMenu" href="#">Menu</a>
+				<div class="nav">
+					<li class="active"><a href="首页.html"><i> </i>首页</a></li>
+					</a>
+						
+						</li> 						
+						<li><a href="商家推荐.html" >商家推荐</a></li>            
+						<li><a href="动态新闻.html" >动态新闻</a></li>						  				 
+					   <li><a href="联系我们.html" >联系我们</a></li>	
+					   <div class="search">
+						<form>
+							<input type="text" value="搜索...." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+							<input type="submit" value="">
+						</form>
+					</div>
+					</div>	
+					</div>
+					
+				<script type="text/javascript" src="js/nav.js"></script>
+			
+			
+		</div>
+		</div>
+			
+		
+		<p id="contain" align="center" > 
+			<a target="_blank" href="https://k.sina.com.cn/article_5904494759_15fef70a700100lbqn.html?from=news">
+			<img src="images/xw1.png" width="280" height="200"/></a>
+			<br/>
+			<font size="5"><b>崂山矿泉水心系抗役连续五批捐赠物资到达一线医护人员手中</b></font>
+			<br/><br/>
+			<font size="3">以实际行动捍卫人民群众的生命安危 崂山矿泉水对青岛市新型冠状病毒肺炎疫情防控</font>
+		
+		</p>
+	
+		<p id="contain" align="center"> 
+			<a target="_blank" href="https://k.sina.com.cn/article_6089430369_16af5556102000ygdk.html?from=local">
+			<img src="images/xw2.png" width="280" height="200"/></a>
+			<br/>
+			<font size="5"><b>众志成城，崂山矿泉水在行动：首批捐赠物资成功送达防空一线</b></font>
+			<br/><br/>
+			<font size="3">1月29日早上崂山矿泉水第一批产品共15万余瓶崂山矿泉包装饮用水成功送达防空一线工作者公安和交警手中，在目前形式尚不明确的情况下 崂山矿泉水迅速反应</p>
+</font>
+		</p>
+		
+	
+	</body>
+</html>

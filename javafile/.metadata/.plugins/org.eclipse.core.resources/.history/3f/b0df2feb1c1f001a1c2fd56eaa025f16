@@ -1,0 +1,6 @@
+package richanglianxi;
+
+public interface dance {
+	void dan();
+
+}

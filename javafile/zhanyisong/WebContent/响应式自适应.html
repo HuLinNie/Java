@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>响应式自适应</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		$.when(
+		$.getScript('https://www.runoob.com/static/js/draggable.js')
+		).done(function(){
+			draggable.init(
+					$('div[_echarts_instance_]')[0],
+					myChart,
+					{width:1000,
+						height:400});
+		option={
+				baseOption:{
+					title:{text:'环形图',
+						x:'center'},
+					legend:{data:['pie-a','pie-b','pie-c','pie-d']},
+					series:[
+						{type:'pie',
+						data:[
+							{value:10,name:'pie-a'},
+							{value:50,name:'pie-b'},
+							{value:30,name:'pie-c'},
+							{value:20,name:'pie-d'}]},
+						{type:'pie',
+							data:[
+								{value:30,name:'pie-a'},
+								{value:50,name:'pie-b'},
+								{value:15,name:'pie-c'},
+								{value:25,name:'pie-d'}]}]},
+				media:[
+					{query:{minAspectRatio:1},
+					option:{
+						legend:{right:'center',
+							bottom:0,
+							orient:'horizontal'},
+						series:[
+							{radius:[20,'50%'],
+							center:['25%','50%']},
+							{radius:[30,'50%'],
+								center:['75%','50%']}]
+					}
+				},
+				{query:{maxAspectRation:1},
+					option:{
+						legend:{
+							right:'center',
+							bottom:0,
+							orient:'vertical'},
+						series:[
+							{radius:[20,'50%'],
+								center:['50%','30%']},
+								{radius:[30,'50%'],
+									center:['50%','70%']}]
+					}
+				},
+				{query:{maxWidth:800},
+					option:{
+						legend:{
+							right:10,
+							top:'15%',
+							orient:'vertical'},
+						series:[
+							{radius:[20,'50%'],
+								center:['50%','30%']},
+								{radius:[30,'50%'],
+									center:['50%','75%']}]
+					}
+				},
+				{	option:{
+						legend:{
+							right:'center',
+							bottom:0,
+							orient:'horizontal'},
+						series:[
+							{radius:[20,'50%'],
+								center:['25%','50%']},
+								{radius:[30,'50%'],
+									center:['75%','50%']}]
+					}
+				},
+				]
+		};
+		myChart.setOption(option);	
+		});
+	</script>
+</body>
+</html>

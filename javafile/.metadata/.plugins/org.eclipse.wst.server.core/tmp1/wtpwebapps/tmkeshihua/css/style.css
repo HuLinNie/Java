@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+@import url("form.css");
+@import url("table.css");
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+body{
+	width:960px;
+	margin:0px auto;
+}
+.body-content-height{min-height:720px;}
+
+.ctrl-button {
+	background: #0b6e48;
+	color: #c7ceb2;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	height: 50px;
+	border: 1px solid #dce4e6;
+	border-radius: 4px;
+	padding: 12px 20px;
+}
+nav{background-color:orange;
+	height:50px;
+	line-height:50px;
+	}
+nav a{
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    padding: 12px 20px;
+}
+.center-block{
+	margin:0 auto;
+	display:block;
+	width:180px;
+}

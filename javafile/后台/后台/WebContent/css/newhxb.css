@@ -1,0 +1,30 @@
+.div1 {
+    height: 180px;
+    width: 11%;
+    background-color:#4B0082；
+    top:0px;
+    position: fixed;
+    z-index:562;
+}
+.div2{
+    color:#696969;
+	width: 80%;
+	height:6%;
+    font-size:20px;
+    left:170px;
+    position:fixed;
+    top:20px;
+    margin-bottom:10px;
+    }
+
+.RightBox{
+	width: 80%;
+	height:90%;
+	margin-top:60px;
+}
+ul{font-size:0;}
+ul,ol,li{margin:0px; padding:0px; list-style:none; vertical-align:top; }
+img{ display: block;padding: 30px 18px;text-align: center;}
+body,div,span,p,h1,h2,h3,h4,h5,h6,ul,ol,li,em,tr,td,input,label,select{margin:0px;outline:medium none; background:none; padding:0px;font-family:Arial,"微软雅黑";border:0 none;font-style:normal;} 
+a{text-decoration:none;outline:none;font-family:Arial,"微软雅黑";} 
+a:hover{ text-decoration: none;}

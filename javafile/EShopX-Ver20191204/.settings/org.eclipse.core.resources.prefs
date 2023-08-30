@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/shopping/bean/Album.java=UTF-8
+encoding//src/shopping/controller/AlbumServlet.java=UTF-8
+encoding//src/shopping/controller/CartServlet.java=UTF-8

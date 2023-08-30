@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+@import url("form.css");
+@import url("table.css");
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background-color: #f3f5f7;
+
+}
+.header {
+	height: 100px;
+	/* background-color: pink; */
+
+}
+.inner{
+	width: 1300px;
+	height: 100px;
+	/* background-color:#ccc; */
+	margin: 0 auto;
+}
+.nav{
+	width: 300px;
+	height: 100px;
+	float: left;
+	/* background-color:red; */
+	margin-left: 50px;
+}
+.logo{
+	width: 150px;
+    height: 80px;
+    float:left;
+    margin:10px;
+}
+.logo img{
+	width: 150px;
+    height: 80px;
+	/* margin: 25px; */
+}
+.nav li{
+	float: left;
+	line-height: 100px;
+	margin-left: 25px;
+	list-style: none;
+}
+.nav li a{
+	text-decoration: none;
+	color:#333;
+	font-size: 18px;
+}
+.nav li a:hover{
+	color:red;
+}
+.search {
+	width: 410px;
+	height: 40px;
+	background-color: purple;
+	float: left;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.search input {
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	outline: none;
+	padding-left: 10px;
+	float: left;
+}
+.search button {
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	float: left;
+	background: url(../images/fa-search.png) no-repeat;
+}
+.personal{
+	float: right;
+}
+.personal li{
+	list-style: none;
+	float: left;
+	margin-left: 10px;
+	margin-top: 40px;
+}
+.personal a {
+	text-decoration:none;
+	color:#333;
+}
+.personal a:hover{
+	text-decoration:none;
+	color:red;
+}
+.personal li img {
+	width:20px;
+	height:20px;
+}

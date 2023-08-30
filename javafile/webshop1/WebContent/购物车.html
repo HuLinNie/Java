@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<!--slider-script-->
+		<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+				  $("#slider1").responsiveSlides({
+					auto: true,
+					speed: 500,
+					namespace: "callbacks",
+					pager: true,
+				  });
+				});
+			</script>
+<!--//slider-script-->
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+</head>
+<body>
+  
+	
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+			
+        }
+
+        .all {
+            width: 1000px;
+            margin-top:40px;
+		    margin-left:70px;
+        }
+
+        .b-top {
+            display: flex;
+            flex-direction: row;
+            background: #ffe0cb;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .b-info {
+            flex: 1;
+            text-align: center;
+        }
+
+        .b-length {
+            flex: 2;
+        }
+
+        .b-ele {
+            display: flex;
+            flex-direction: row;
+            height: 70px;
+            line-height: 70px;
+            padding: 10px 0;
+            border-bottom: 1px dashed silver;
+        }
+
+        .b-ele div {
+            text-align: center;
+        }
+
+        .chooseEle {
+            background: white;
+        }
+
+        .b-button {
+            color: blue;
+            width: 60px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            background: silver;
+            border: none;
+        }
+
+        .b-count-button {
+            width: 25px;
+            height: 25px;
+            border: none;
+            color: blue;
+            background: orange;
+        }
+
+        .b-count-input {
+            border: none;
+            height: 20px;
+            width: 25px;
+            outline: none;
+            text-align: center;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+			
+        }
+
+        .b-display {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .b-display div {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .left {
+            text-align: center;
+        }
+
+        .right button {
+            width: 100%;
+            height: 100%;
+            background: red;
+            color: white;
+            text-align: center;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+ <!--header-->
+	<div class="header">
+		<div class="header-top">
+			<div class="container">	
+			<div class="header-top-in">			
+				<div class="logo">
+					<a href="index.html"><img src="images/logo2.png" alt=" " ></a>
+				</div>
+				<div class="header-in">
+					<ul class="icon1 sub-icon1">
+							<li  ><a href="login.jsp">登录</a> </li>
+							<li  ><a href="register.jsp"> 注册</a></li>
+							<li ><a href="购物车.html" >购物车</a></li>
+							<li > <a href="客服.html" >客服</a> </li>	
+							<li><div class="cart">
+									<a href="#" class="cart-in"> </a>
+									<span> 2</span>
+								</div>
+								<ul class="sub-icon1 list">
+						  <h3>最近添加</h3>
+						  <div class="shopping_cart">
+							  <div class="cart_box">
+							   	 <div class="message">
+							   	     <div class="alert-close"> </div> 
+					                <div class="list_img"><img src="images/1.jpeg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">崂山矿泉水</a></h4>24x<span class="actual">
+		                             ￥48.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                            <div class="cart_box1">
+								  <div class="message1">
+							   	     <div class="alert-close1"> </div> 
+					                <div class="list_img"><img src="images/2.jpeg" class="img-responsive" alt=""></div>
+								    <div class="list_desc"><h4><a href="#">白花蛇草水</a></h4>1x<span class="actual">
+		                             ￥120.00</span></div>
+		                              <div class="clearfix"></div>
+	                              </div>
+	                            </div>
+	                        </div>
+	                        <div class="total">
+	                        	<div class="total_left">购物车小计: </div>
+	                        	<div class="total_right">￥168.00</div>
+	                        	<div class="clearfix"> </div>
+	                        </div>
+                            <div class="login_buttons">
+							  <div class="check_button"><a href="checkout.html">查看</a></div>
+							  <div class="clearfix"></div>
+						    </div>
+					      <div class="clearfix"></div>
+						</ul>
+							</li>
+						</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+		<div class="container">
+			<div class="h_menu4">
+			<a class="toggleMenu" href="#">Menu</a>
+				<div class="nav">
+					<li class="active"><a href="首页.html"><i> </i>首页</a></li>
+					</a>
+						
+						</li> 						
+						<li><a href="商家推荐.html" >商家推荐</a></li>            
+						<li><a href="动态新闻.html" >动态新闻</a></li>						  				 
+					   <li><a href="联系我们.html" >联系我们</a></li>	
+					   <div class="search">
+						<form>
+							<input type="text" value="搜索...."onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" >
+							<input type="submit" value="">
+						</form>
+					</div>
+					</div>	
+					</div>
+					
+				<script type="text/javascript" src="js/nav.js"></script>
+			
+			
+		</div>
+		</div>
+		
+<div class="all">
+    <div class="b-top">
+        <div class="b-info">
+            <input type="checkbox" class="checkAll"/>全选
+        </div>
+        <div class="b-info b-length">商品名称</div>
+        <div class="b-info">图片</div>
+        <div class="b-info">单价</div>
+        <div class="b-info b-length">数量</div>
+        <div class="b-info">小计</div>
+        <div class="b-info">操作</div>
+    </div>
+    <div class="b-list"></div>
+    <div class="b-display">
+        <div class="left">
+            <input type="checkbox" class="reverseCheck"/>反选
+        </div>
+        <div class="center">
+            总价:<span class="allPrice"></span>
+        </div>
+        <div class="right">
+            <button>去结算></button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var cart = [
+        {
+            
+            "name": "崂山矿泉水24瓶",
+            "src": "images/1.jpeg",
+            "price": "48",
+            "totle": "48",
+            "num": 1
+        },
+        {
+            
+            "name": "白花蛇草水",
+            "src": "images/2.jpeg",
+            "price": "120",
+            "totle": "120",
+            "num": 1
+        },
+        {
+           
+            "name": "崂山桶装水",
+            "src": "images/10.png",
+            "price": "30",
+            "totle": "60",
+            "num": 2
+        }
+        
+    ];
+    var bTop = document.getElementsByClassName("b-top")[0];
+    var bList = document.getElementsByClassName("b-list")[0];
+    //动态创建页面
+    for (var i = 0; i < cart.length; i++) {
+        var bEle = document.createElement("div");
+        bEle.className = "b-ele";
+        bList.appendChild(bEle);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info";
+        var bInput = document.createElement("input");
+        bInput.type = "checkbox";
+        bInput.className = "check"
+        bNode.appendChild(bInput);
+        bEle.appendChild(bNode);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info b-length";
+        bNode.innerHTML = cart[i].name;
+        bEle.appendChild(bNode);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info";
+        bNode.style.lineHeight = "80px"
+        var bImg = document.createElement("img");
+        bImg.src = cart[i].src;
+        bNode.appendChild(bImg);
+        bEle.appendChild(bNode);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info b-price";
+        bNode.innerHTML ="￥"+ cart[i]["price"] ;
+        bEle.appendChild(bNode);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info b-length";
+        var bCountButtonSub = document.createElement("button");
+        bCountButtonSub.className = "b-count-button buttonSub";
+        bCountButtonSub.innerHTML = "-";
+        var bCountInput = document.createElement("input");
+        bCountInput.type = "text";
+        bCountInput.className = "b-count-input";
+        bCountInput.value = cart[i].num;
+        var bCountButtonAdd = document.createElement("button");
+        bCountButtonAdd.className = "b-count-button buttonAdd";
+        bCountButtonAdd.innerHTML = "+";
+        bNode.appendChild(bCountButtonSub);
+        bNode.appendChild(bCountInput);
+        bNode.appendChild(bCountButtonAdd);
+        bEle.appendChild(bNode)
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info b-total";
+        bNode.innerHTML = "￥"+cart[i].totle  ;
+        bEle.appendChild(bNode);
+
+        var bNode = document.createElement("div");
+        bNode.className = "b-info";
+        var bCountButton = document.createElement("button");
+        bCountButton.className = "b-button eleDelete";
+        bCountButton.innerHTML = "删除";
+        bNode.appendChild(bCountButton)
+        bEle.appendChild(bNode)
+    }
+    ;
+    //全选
+    var checkAll = document.getElementsByClassName("checkAll")[0];
+    var check = document.getElementsByClassName("check");
+    var bEle = document.getElementsByClassName("b-ele");
+    var allPrice = document.getElementsByClassName("allPrice")[0];
+    checkAll.onclick = function () {
+        for (var i = 0; i < check.length; i++) {
+            reverseCheck.checked = false
+            if (checkAll.checked == true) {
+                check[i].checked = true;
+                bEle[i].className = "b-ele chooseEle";
+            } else {
+                bEle[i].className = "b-ele";
+                check[i].checked = false;
+            }
+        }
+    };
+    //反选
+    var reverseCheck = document.getElementsByClassName("reverseCheck")[0];
+    reverseCheck.onclick = function () {
+        //输入数量
+        for (var i = 0; i < check.length; i++) {
+            check[i].checked = !check[i].checked;
+            if (check[i].checked == false) {
+                bEle[i].className = "b-ele";
+                checkAll.checked = false;
+            } else {
+                bEle[i].className = "b-ele chooseEle";
+            }
+        }
+    };
+    //单选
+    for (var i = 0; i < bEle.length; i++) {
+        check[i].checkValue = i;
+        check[i].onclick = function () {
+            console.log(this.checked)
+            if (this.checked == true) {
+                console.log(this.className)
+                bEle[this.checkValue].className = "b-ele chooseEle";
+            } else {
+                checkAll.checked = false;
+                bEle[this.checkValue].className = "b-ele"
+            }
+        }
+    }
+    window.onload = function (ev) {
+        //
+
+        var buttonSub = document.getElementsByClassName("buttonSub");
+        var buttonAdd = document.getElementsByClassName("buttonAdd");
+        var bCountInput = document.getElementsByClassName("b-count-input");
+        var bEle = document.getElementsByClassName("b-ele");
+        var bTotal = document.getElementsByClassName("b-total");
+        var bPrice = document.getElementsByClassName("b-price");
+        var eleDelete = document.getElementsByClassName("eleDelete");
+        var allPrice = document.getElementsByClassName("allPrice")[0];
+        //数量进行加减
+        allPrice.innerHTML = "￥"+cacAllPrice(bTotal);
+        for (var i = 0; i < bEle.length; i++) {
+            buttonSub[i].countNum = i;
+            buttonSub[i].onclick = function () {
+                if (bCountInput[this.countNum].value == 1) {
+                    alert("该宝贝不能减少了噢!")
+                } else {
+                    var value = --bCountInput[this.countNum].value;
+                    bTotal[this.countNum].innerHTML = "￥"+cacTotal(this.countNum, bPrice, value) ;
+                    allPrice.innerHTML = "￥"+cacAllPrice(bTotal)
+                }
+            };
+            buttonAdd[i].countNum = i;
+            buttonAdd[i].onclick = function () {
+                var value = ++bCountInput[this.countNum].value;
+                bTotal[this.countNum].innerHTML = "￥"+cacTotal(this.countNum, bPrice, value) ;
+                allPrice.innerHTML ="￥"+ cacAllPrice(bTotal)
+            }
+        }
+        //对文本框的操作
+        for (var i = 0; i < bEle.length; i++) {
+            bCountInput[i].countNum = i;
+            bCountInput[i].onkeydown = function (e) {
+                if ((e.keyCode >= 48 && e.keyCode <= 57) || e.keyCode == 8) {
+                } else {
+                    return false
+                }
+            };
+            bCountInput[i].onblur = function () {
+                if (this.value == "") {
+                    this.value = 1;
+                    bTotal[this.countNum].innerHTML = "￥"+cacTotal(this.countNum, bPrice, this.value);
+                }
+            };
+            bCountInput[i].onkeyup = function () {
+                if (this.value == "") {
+                    bTotal[this.countNum].innerHTML = "0￥";
+                } else if (this.value == 0) {
+                    this.value = 1;
+                    bTotal[this.countNum].innerHTML = "￥"+cacTotal(this.countNum, bPrice, this.value) ;
+                } else {
+                    bTotal[this.countNum].innerHTML ="￥"+ cacTotal(this.countNum, bPrice, this.value) ;
+                }
+                allPrice.innerHTML = "￥"+cacAllPrice(bTotal)
+            }
+        }
+        //删除元素
+        console.log(bEle.length);
+        for (var i = 0; i < bEle.length; i++) {
+            eleDelete[i].value = i;
+            eleDelete[i].onclick = function () {
+                bList.removeChild(bEle[this.value]);
+                for(var k = 0;k<bEle.length;k++){
+                    //重新给所有对象的value/countNum索引值
+                    eleDelete[k].value = k;
+                    buttonSub[k].countNum=k;
+                    bCountInput[k].countNum=k;
+                    buttonAdd[k].countNum=k;
+                }
+                allPrice.innerHTML = "￥"+cacAllPrice(bTotal)
+            }
+        }
+    }
+
+    //计算小计
+    function cacTotal(index, priceObj, value) {
+        return parseFloat(priceObj[index].innerHTML) * parseInt(value);
+    }
+    //计算总价
+    function cacAllPrice(bTotal) {
+        var totalPrice=0;
+        for(var i=0;i<bTotal.length;i++){
+            totalPrice += parseFloat(bTotal[i].innerHTML)
+        }
+        return totalPrice;
+    }
+
+
+</script>
+<!---->
+			<div class="footer-middle">
+				<div class="container">
+					<div class="footer-middle-in">
+						<h6>关于我们</h6>
+						<p>青饮快送是青岛饮料集团有限公司旗下产品的网上购物商城，这里优惠多多，欢迎您在线选购！</p>
+					</div>
+					<div class="footer-middle-in">
+						<h6>信息</h6>
+						<ul>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">配送信息</a></li>
+							<li><a href="#">隐私政策</a></li>
+							<li><a href="#">条款及细则</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>客户服务</h6>
+						<ul>
+							<li><a href="联系我们.html">联系我们</a></li>
+							<li><a href="#">退货</a></li>
+							<li><a href="#">网站地图</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>我的账户</h6>
+						<ul>
+							<li><a href="">我的账户</a></li>
+							<li><a href="#">订单历史</a></li>
+							<li><a href="">愿望清单</a></li>
+							
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>附加功能</h6>
+						<ul>
+							<li><a href="#">品牌</a></li>
+							<li><a href="#">购物券</a></li>
+							<li><a href="#">会员</a></li>
+							<li><a href="#">特价商品</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<p class="footer-class">Copyright &copy; 2020.青饮快送</a></a></p>
+			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+            		
+
+					
+				
+
+
+					
+	</body>			
+</html>

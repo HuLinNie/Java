@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<script src="js/dataTool.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var data = echarts.dataTool.prepareBoxplotData([
+			[850,740,900,1070,930,850,950,980,980,890,1000,980,930,650,760,810,1000,1000,960,960],
+			[860,740,900,1070,930,850,950,980,990,880,1000,980,930,650,760,810,1000,1000,960,960],
+			[830,740,900,1070,930,860,970,980,980,880,1000,980,930,650,760,810,1000,800,860,960],
+			[890,740,900,1070,930,850,950,980,980,880,1080,980,930,750,760,810,900,1000,960,960],
+			[830,740,900,1070,930,820,950,980,980,880,1000,980,930,650,860,810,1000,1000,960,960]
+		]);
+		var option={
+			title:[
+				{
+					text:'箱线图',
+					left:'center'
+				},
+				{
+					text:'upper:Q3+1.5*IQR \nlower:Q1-1.5*IQR',
+					borderColor:'#999',
+					borderWidth:1,
+					textStyle:{
+						fontSize:12
+					},
+					left:'10%',
+					top:'90%'
+				}
+			],
+			tooltip:{
+				trigger:'item',
+				axisPointer:{
+					type:'shadow'
+				}
+			},
+			grid:{
+				left:'10%',
+				right:'10%',
+				bottom:'15%'
+			},
+			xAxis:{
+				type:'category',
+				data:data.axisData,
+				axisLabel:{
+					formatter:'实验{value}'
+				}
+			},
+			yAxis:{
+				type:'value',
+				name:'',
+				splitArea:{show:true}
+			},
+			series:[
+				{
+					type:'boxplot',
+					data:data.boxData,
+					tooltip:{
+						formatter:function(param){
+							return [
+								'实验'+param.name +':',
+								'上限：'+param.data[5],
+								'上四分位数：'+param.data[4],
+								'中位数：'+param.data[3],
+								'下四分位数：'+param.data[2],
+								'下限'+param.data[1],
+							].join('<br/>')
+						}
+					}
+				},
+				{
+					name:'outlier',
+					type:'scatter',
+					data:data.outliers
+				}
+			]		
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

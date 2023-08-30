@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Echarts</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var option={
+			xAxis: {
+			        	type: 'category',
+			        	data: ['','0.1','0.2','0.3','0.4','0.5'],
+				boundaryGap:false,
+				name:'查询选择率',
+				nameLocation:'center',
+				nameGap:30
+			    },
+			    yAxis: {
+			        	name:'VO尺寸(字节)', 
+				nameLocation:'center',
+				nameGap:40
+			    },
+			    legend:{
+			    	data:['Merkle树','聚合MB树'],
+			    	bottom:'0%'
+			    },
+			    tooltip:{
+			    	trigger:'axis',
+			    	axisPointer:{
+			    		type:'cross',
+			    		lable:{
+			    			backgroundColor:'#6a7985'
+			    		}
+			    	}
+			    },
+			    series: [{
+			    	name:'Merkle树',
+			        	data: [128, 320, 576, 734, 862,926],
+			        	type: 'line',
+			       	smooth:true
+			    },
+			    {
+			    	name:'聚合MB树',
+			        	data: [120,280,520,640,720,800],
+			        	type: 'line',
+			        	smooth:true
+			    }]
+		};
+		myChart.setOption(option);
+	</script>
+</body>
+</html>

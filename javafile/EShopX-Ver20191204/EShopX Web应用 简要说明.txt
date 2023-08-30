@@ -1,0 +1,6 @@
+1.在mysql8中使用数据库脚本创建数据库与表
+2.解压EShopX到目标文件夹
+3.使用eclipse，文件->import->existing projects into workspace,选择解压EShopX所在的文件夹，将工程导入eclipse
+4.设置好运行时环境（tomcat）
+5.打开shopping.dao.ShopDao.java文件，修改数据库连接使用的用户名和密码（根据自己机器mysql数据库的用户名和密码修改）
+6.完成以上设置后，应可启动web应用，并在浏览器中访问网站

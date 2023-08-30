@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>事件与行为</title>
+</head>
+<script src="js/echarts.min.js"></script>
+<body>
+	<div id="main" style="width:800px;height:600px;"></div>
+	<script type="text/javascript">
+		var myChart = echarts.init(document.getElementById('main'));
+		//指定图表的配置项和数据
+		var option={
+				title:{
+					text:'各商品销量占比',
+					subtext:'A商场情况分析',
+					left:'center'
+				},
+			    legend:{
+			    	orient:'vertical',
+			    	left:'left',
+			    	data:['A商品','B商品','C商品','D商品','E商品']
+			    },
+			    tooltip:{
+			    	trigger:'item',
+			    	formatter:'{a}<br/>{b}:{c}({d}%)'
+			    },
+			    series: [{
+			    	name:'所售商品',
+			        type: 'pie',
+			        data: [{value:343,name:'A商品'},
+			        	{value:250,name:'B商品'},
+			        	{value:509,name:'C商品'},
+			        	{value:108,name:'D商品'},
+			        	{value:948,name:'E商品'},],
+			    }
+			]
+		};
+		myChart.setOption(option);
+		myChart.on('click',function(params){
+			window.open('https://www.baidu.com/s?wd='+encodeURIComponent(params.name));
+		});
+	</script>
+</body>
+</html>

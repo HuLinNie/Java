@@ -1,0 +1,95 @@
+
+/*用户管理*/
+.Usermanage { }
+.PublicHead { position: fixed; height: 60px; background: #fe7844; padding: 0 2%; width: 96%; z-index: 11; left: 0; }
+.PublicHead .leftBox { line-height: 60px; display: inline-block; float: left; }
+.PublicHead .leftBox > div { display: inline-block; }
+.PublicHead .leftBox i { font-size: 23px; vertical-align: middle; color:#191970; margin: 0 20px; }
+.PublicHead .leftBox .companyLogo { width: 98px; height: 40px; background: #191970; margin: 20px 0; float: left; }
+.PublicHead .leftBox .companyLogo img { width: 100%; margin: 10px 10px;}
+.PublicHead .leftBox .companyText { font-weight: bold; font-size: 18px; color: #191970; margin: 0 0 0 20px; }
+.PublicHead .RightBox { display: inline-block; float: left; }
+.PublicHead .RightBox .UserPhotoBox { display: inline-block; margin: 6.5px 25px; vertical-align: middle; }
+.PublicHead .RightBox .UserPhotoBox .UserPic { width: 47px; height: 47px; overflow: hidden; border-radius: 50%; display: inline-block; vertical-align: middle; }
+.PublicHead .RightBox .UserPhotoBox .UserPic img { width: 100%; }
+.PublicHead .RightBox .UserPhotoBox .UserName { display: inline-block; color: #fff; vertical-align: middle; }
+.PublicHead .RightBox .dropOutBox { display: inline-block; vertical-align: middle; cursor: pointer; }
+.PublicHead .RightBox .dropOutBox i, span { vertical-align: middle; }
+.PublicHead .RightBox .dropOutBox i { color: #fff; font-size: 24px; }
+.PublicHead .RightBox .dropOutBox span { color: #fff; }
+
+
+.PublicDownWhole { height: 100%; position: relative;  }
+.PublicDownWhole .leftBox { display: inline-block; width: 11%; top:160px; height: 100%; position: fixed; left: 0; float: left; z-index: 1; }
+.PublicDownWhole .leftBox ul { padding: 11% 0; height: 100%; }
+.PublicDownWhole .leftBox ul li { padding: 10px,0,0,10px; width: 100%; height: 45px; line-height: 45px; font-size: 15px; color: #000; cursor: pointer; white-space: nowrap; }
+.PublicDownWhole .leftBox ul li i { font-size: 16px; vertical-align: middle; margin: 0 0 0 40%; }
+.PublicDownWhole .leftBox ul li span { vertical-align: middle; margin: 0 0 0 30px; font-size: 15px; }
+.PublicDownWhole .leftBox ul li:hover { background: 		#C0C0C0; transition: all ease .3s; }
+.PublicDownWhole .leftBox ul li:hover i { color: 		#FFFAFA; }
+.PublicDownWhole .leftBox ul li:hover span { color: 		#FFFAFA; }
+.PublicDownWhole .leftBox ul li.Select { background:		#C0C0C0; transition: all ease .3s; }
+.PublicDownWhole .leftBox ul li.Select i { color: 		#FFFAFA; }
+.PublicDownWhole .leftBox ul li.Select span { color: 		#FFFAFA; }
+
+.PublicDownWhole .RightBox { display: inline-block; position: relative; left: 12%; background: #f1f1f1; height: 100%; width: 83%; float: left; padding: 2%; vertical-align: top; }
+
+/*右侧盒子公用样式*/
+.PublicContentBox {
+	height:90%;
+	margin-top:10px; }
+
+.InquireBox { height: 45px; width: 100%; margin: 0 0 2% 0; }
+
+.PublicBtnIcon { display: inline-block; font-size:17px;font-family:Arial,"微软雅黑"; color:#FFFFFF; padding: 10px; margin: 15px; cursor: pointer; }
+.PublicBtnIcon i { vertical-align: middle; }
+.fr { float: right; }
+
+.Color5Btn { background:#696969; }
+.Color5Btn:hover { background: #A9A9A9; transition: all ease .3s; }
+
+
+.headbox { border-bottom: 1px solid #ccc; }
+.headboxtext { display: inline-block; }
+.headboxtext span { color: #000; font-size: 15px; }
+.headboxtext .span1 { margin: 0 0 0 10px; }
+
+
+.InquireTableBox { background: #fff; }
+
+.InquireSelectTable { margin: 20px 10px 0 10px; overflow: auto; }
+.PublicTableCss { border-collapse: collapse; border-spacing: 0; border: 1px solid #ccc; }
+.PublicTableCss thead { background: #e2e2e2; }
+.PublicTableCss thead tr { }
+.PublicTableCss thead tr td { max-width: 135px; padding: 10px 15px; text-align: center; font-weight: bold; position: relative; white-space: nowrap; }
+.PublicTableCss thead tr td::before { position: absolute; content: ""; right: 0.5px; top: 50%; width: 1px; height: 70%; background: #fff; -webkit-transform: translate(0%,-50%); -moz-transform: translate(0%,-50%); -ms-transform: translate(0%,-50%); -o-transform: translate(0%,-50%); transform: translate(0%,-50%); }
+.PublicTableCss thead tr td:last-child::before { display: none; }
+
+.PublicTableCss tbody { }
+.PublicTableCss tbody tr { border-bottom: 1px solid #ccc; }
+.PublicTableCss tbody tr:hover { background: #f3f3f3; transition: all ease .3s; }
+.PublicTableCss tbody tr td { max-width: 400px; padding: 5px 15px; text-align: center; position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/*.PublicTableCss tbody tr td::before { position: absolute; content: ""; right: 0.5px; top: 4px; width: 1px; height: 70%; background: #ccc; }*/
+.PublicTableCss tbody tr td::before { position: absolute; content: ""; right: 0.5px; top: 50%; width: 1px; height: 70%; background: #ccc; -webkit-transform: translate(0%,-50%); -moz-transform: translate(0%,-50%); -ms-transform: translate(0%,-50%); -o-transform: translate(0%,-50%); transform: translate(0%,-50%); }
+.PublicTableCss tbody tr td:last-child::before { display: none; }
+.PublicTableCss tbody tr td .productImgBox { width: 65px; height: 65px; overflow: hidden; margin: auto; }
+.PublicTableCss tbody tr td .productImgBox img { width: 100%; }
+
+.PublicTableBtnIcon { display: inline-block; color: #fff; padding: 3px 10px; cursor: pointer; }
+.PublicTableBtnIcon i { vertical-align: middle; }
+.PublicTableBtnIcon span { vertical-align: middle; }
+
+
+.PageNumber { padding: 20px 10px 20px 0; text-align: right; position: relative; }
+.LeftArrow, .RightArrow { font-size: 14px; padding: 5px 10px; color: #647686; padding: 0 12px; cursor: pointer; line-height: 30px; }
+.LeftArrow { border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; float: left; height: 30px; }
+.RightArrow { border-left: 0px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; float: right; }
+.LeftArrow:hover { color: #fff; background: #fe7844; border: 1px solid #fe7844; }
+.RightArrow:hover { color: #fff; background: #fe7844; border: 1px solid #fe7844; border-left: 0; }
+.NumbersBox { display: inline-block; }
+.NumbersBox ul { display: inline-block; }
+.NumbersBox ul li { display: inline-block; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; float: left; padding: 0px 12px; color: #000; height: 30px; line-height: 30px; }
+
+
+.NumbersBox ul li:hover { color: #fff; background: #fe7844; transition: all ease .4s; -webkit-transition: all ease .4s; -moz-transition: all ease .4s; -ms-transition: all ease .4s; -o-transition: all ease .4s; cursor: pointer; border-right: 1px solid #fe7844; border-top: 1px solid #fe7844; border-bottom: 1px solid #fe7844; }
+.NumbersBox ul li.Select { color: #fff; background: #fe7844; transition: all ease .4s; -webkit-transition: all ease .4s; -moz-transition: all ease .4s; -ms-transition: all ease .4s; -o-transition: all ease .4s; cursor: pointer; border-right: 1px solid #fe7844; border-top: 1px solid #fe7844; border-bottom: 1px solid #fe7844; }

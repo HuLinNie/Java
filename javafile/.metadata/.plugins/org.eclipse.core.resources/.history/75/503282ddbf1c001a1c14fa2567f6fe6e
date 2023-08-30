@@ -1,0 +1,42 @@
+package richanglianxi;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class idfolw {
+	public  static void main(String[]args) throws IOException {
+//	try {
+//		FileInputStream file = new FileInputStream("C:\\Users\\harry\\Desktop\\java实验参考代码\\Matrix.java");
+//		FileOutputStream fos =new FileOutputStream("C:\\Users\\harry\\Desktop\\java实验参考代码\\123.java");
+//		int c=0;
+//		while((c=file.read())!=-1) {
+//			fos.write(c);
+//		}
+//		file.close();
+//		fos.close();
+//	} catch (FileNotFoundException e) {
+//		// TODO Auto-generated catch block
+//		System.out.println("sdf");
+//	}
+//	finally {
+//		System.out.println("sdf");
+//		
+//	}
+//	System.out.print("success");
+//	
+		@SuppressWarnings("resource")
+		Scanner scr = new Scanner(System.in);
+		String  c =scr.nextLine();
+		System.out.println(c);
+//		while((c=scr.nextLine())!= -1) {
+//		FileOutputStream fos =new FileOutputStream("C:\\Users\\harry\\Desktop\\java实验参考代码\\123.java");
+//		fos.write(c);
+		
+		
+	}	
+
+}
